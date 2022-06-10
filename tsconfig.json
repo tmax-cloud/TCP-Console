@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "node",
     "outDir": "./public/dist/build/",
@@ -12,10 +11,9 @@
     "sourceMap": true,
     "noUnusedLocals": true,
     "types": ["jest"],
-    "paths": {
-      "protractor": ["integration-tests/protractor.d.ts"]
-    }
+    "useDefineForClassFields": true // 클래스 필드에 TC-39 사양을 가진 transpilation을 사용하도록 구성을 업데이트, 클래스 필드가 초기화되기 전에 observable을 만들기 위한 속성
   },
   "exclude": [".yarn", "**/node_modules", "public/dist"],
-  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.json"]
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.json"],
+  "extends": "./tsconfig.paths.json"
 }
