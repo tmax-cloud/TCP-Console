@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "lodash-es": "^4.17.21",
     "mobx": "^6.6.0",
     "mobx-react": "^7.5.0",
     "react": "^18.1.0",
@@ -23,7 +24,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "prettier" : "prettier --write src/**/*.{js,jsx,ts,tsx,json}"
+    "prettier": "prettier --write src/**/*.{js,jsx,ts,tsx,json}"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.17.12",
     "@babel/plugin-proposal-decorators": "^7.18.2",
+    "@types/lodash-es": "^4.17.6",
     "core-decorators": "^0.20.0",
     "customize-cra": "^1.0.0",
     "eslint": "^8.17.0",
