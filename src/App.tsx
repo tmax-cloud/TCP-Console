@@ -5,11 +5,13 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { TestComponent } from './components/Test';
+import { Sidebar } from './components/Sidebar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Sidebar />
         <img src={logo} className="App-logo" alt="logo" />
         <Button variant="contained">TCP Console</Button>
         <BrowserRouter>
