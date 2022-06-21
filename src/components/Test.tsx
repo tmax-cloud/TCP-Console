@@ -5,7 +5,7 @@ type TestComponentProps = {
   path: string;
   buttonText: string;
 };
-export const TestComponent: React.FC<TestComponentProps> = props => {
+export const TestComponent: React.FC<TestComponentProps> = (props) => {
   const { path, buttonText } = props;
   return (
     <Button variant="contained">
