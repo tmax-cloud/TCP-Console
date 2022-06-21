@@ -16,14 +16,8 @@ function App() {
         <Button variant="contained">TCP Console</Button>
         <BrowserRouter>
           <Routes>
-            <Route
-              path="/"
-              element={<TestComponent path="test2/" buttonText="Test2" />}
-            />
-            <Route
-              path="test2/"
-              element={<TestComponent path="/" buttonText="Test" />}
-            />
+            <Route path="/" element={<TestComponent path="test2/" buttonText="Test2" />} />
+            <Route path="test2/" element={<TestComponent path="/" buttonText="Test" />} />
           </Routes>
         </BrowserRouter>
       </header>
